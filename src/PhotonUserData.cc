@@ -140,7 +140,7 @@ void PhotonUserData::produce( edm::Event& iEvent, const edm::EventSetup& iSetup)
 
     //showershapes 
     float pho_r9 = pho->r9();
-    float pho_sieie = (*full5x5SigmaIEtaIEtaMap)[pho];
+    float pho_sieie = pho->full5x5_sigmaIetaIeta();//(*full5x5SigmaIEtaIEtaMap)[pho];
     float pho_hoe = pho->hadTowOverEm();
     float pho_sieip = pho->sep(); 
     float pho_sipip = pho->spp(); 
